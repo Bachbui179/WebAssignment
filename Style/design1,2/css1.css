@@ -1,0 +1,131 @@
+/* RESET CSS */
+*
+{
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+}
+
+html
+{
+      font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+/* COMMON */
+a
+{
+      text-decoration:none;
+      color:#000;
+}
+
+.head-pd
+{
+      padding: 24px 24px;
+}
+
+.rotate 
+{
+      transform: rotate(-90deg);
+}
+/* HEADER */
+.header
+{
+      position: fixed;
+      width: 10%;
+      height: 100vh;
+      display: flex;
+      flex-direction: column;
+      justify-content:space-around;
+}
+
+.skills, .design2, .home, .ecma, .name
+{
+      text-align: center;
+      transition: transform 0.5s;
+}
+
+.name:hover, .home:hover, .skills:hover, .design2:hover, .ecma:hover
+{
+      transform: rotate(0deg);
+      cursor:pointer;
+}
+
+/* BODY */
+body 
+{
+      background-image: linear-gradient(to bottom right, #4f2bde, #a73ae0);
+      display: flex;
+}
+
+.body 
+{
+      position: relative;
+      left: 10%;
+      display: flex;
+      width: 90%;
+      min-height: 100vh;
+      text-align: center;
+      flex-direction: column;
+      justify-content:space-around;
+}
+
+.heading h1 
+{
+      text-shadow: 3px 3px 3px #ababab;
+      font-family: "Fascinate", sans-serif;
+      font-size: 2.8em;
+}
+
+h3 
+{
+      font-size: 2em;
+      font-family: "Fascinate", sans-serif;
+}
+
+.overview img
+{
+      margin-top: 30px;
+      min-width: 400px;
+      max-height: 230px;
+}
+
+.main-content
+{
+      display: flex;
+      align-items:center;
+      justify-content:space-evenly;
+
+}
+
+.main-content p
+{
+      font-family: "Katin";
+}
+
+
+/* FOOTER */
+.footer 
+{
+      display: flex;
+      flex-direction: row;
+      justify-content:space-evenly;
+}
+
+.contact
+{
+      width:40%;
+      position: relative;
+      left: -170px;
+}
+
+.contact a
+{
+      position: relative;
+      padding: 24px 24px;
+      transition: bottom 2s;
+}
+
+.contact a:hover
+{
+      bottom: 15px;
+}
