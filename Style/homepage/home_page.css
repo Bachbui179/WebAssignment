@@ -26,7 +26,7 @@ span{
 
 .transition{
     transition: 0.4s;
-}
+} 
 
 /*HEADER*/
 .header{
@@ -145,13 +145,13 @@ span{
 }
 
 .one:hover, .four:hover {
-    background-color: white;
+    background-color: rgba(255, 255, 255, 0.3);
     border: none;
     padding-bottom: 56px;
 }
 
 .five:hover{
-    background-color: white;
+    background-color: rgba(255, 255, 255, 0.3);
     border: none;
 }
 

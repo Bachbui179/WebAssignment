@@ -114,6 +114,7 @@ ul li{
 .nav-container a{
       color: #000;
       text-decoration: none;
+      padding: 12px 15px;
 }
 
 .nav:hover .nav-container {
