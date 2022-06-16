@@ -1,0 +1,93 @@
+/* Phone */
+@media (max-width:575px) and (min-width: 320px) {
+
+      /* COMMON */
+      .btn{
+            text-decoration: underline;
+      }
+
+      .mobile-nogrid{
+            display: block;
+      }
+
+      .mobile-text-color{
+            color:rgb(151 89 51);
+      }
+
+      /* HEADER */
+      .header{
+      
+      }
+
+      #background img{
+            min-height: 100%;
+      }
+      
+      .title p{
+            font-size:2rem;
+            text-shadow: 3px 4px rgb(255 255 255 / 20%);
+            position: relative;
+            top: 4rem;
+      }
+
+
+      /* CONTENT */
+      .content{
+            background-image: none;
+      }
+
+      .aboutme h1{
+            color:rgb(151 89 51);
+      }
+
+      .note{
+            padding-bottom: 5rem;
+            display: block;
+      }
+
+      .content .profile-image img{
+            transform: translateX(-47%) translateY(-80%);
+      }
+
+      .grid-container #skills,
+      .grid-container #para2,
+      .grid-container #para1,
+      .grid-container #qualifications,
+      .grid-container #ecmascript {
+            background-color: rgba(0,0,0,0);
+            padding: 0px 0px 85px 0px;
+      }
+
+      .one a, .four a, .five a{
+            font-size:0.7rem
+      }
+
+      
+
+      /* FOOTER */
+      .footer{
+            transform: translateY(650px);
+      }
+
+      .link{
+            display: none;
+      }
+
+      .mobile-link{
+            display: block;
+      }
+
+      .footer .contact h3{
+            transform: translateX(0px);
+      }
+
+      .mobile-link li{
+            padding-bottom: 1.2rem;
+      }
+      
+      .mobile-link a{
+            color: white;
+      }
+}
+
+/* @media (max-width:575px) and  */
