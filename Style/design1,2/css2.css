@@ -23,6 +23,12 @@ a
       padding: 24px 24px;
 }
 
+.border
+{
+      border: 1px solid #000;
+      border-radius: 10px;
+}
+
 /* HEADER */
 .header
 {
@@ -37,6 +43,17 @@ a
 {
       line-height: 20px;
 } 
+
+.header .rotate
+{
+      transition: 0.5s;
+}
+
+
+.header .rotate:hover 
+{
+      box-shadow: inset 0 -5em 0 0 #9f98b2;
+}
 
 /* BODY */
 body
@@ -61,12 +78,70 @@ body
       text-align: center;
 }
 
+.heading h1
+{
+      text-shadow: 3px 3px 3px #ababab;
+      font-family: "Fascinate", sans-serif;
+      font-size: 2.8em;
+}
+
 .overview
+{
+      text-align: center;
+}
+
+.content
+{
+      display: flex;
+      justify-content: center;
+      align-items: center;
+}
+
+.main-content
+{
+      display: flex;
+      flex-direction: column;
+      width: 50%;
+}
+
+.iaas p, .paas p, .saas p
+{
+      text-align: justify;
+}
+
+.iaas h4, .paas h4, .saas h4
 {
       text-align: center;
 }
 
 
 
-
 /* FOOTER */
+.footer
+{
+      padding: 12px
+}
+
+.contact
+{
+      display: inline-block;
+}
+
+.contact a
+{
+      padding: 0 12px;
+      transition: 0.5s;
+}
+
+.contact a:hover
+{
+      box-shadow: inset 6.5em 0 0 0 #9f98b2;
+}
+
+.copyright
+{
+      display: inline-block;
+      position: absolute;
+      right: 0;
+      width: 20%;
+}

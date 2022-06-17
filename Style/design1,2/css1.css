@@ -12,6 +12,12 @@ html
 }
 
 /* COMMON */
+.border
+{
+      border: 1px solid #000;
+      border-radius: 10px;
+}
+
 a
 {
       text-decoration:none;
@@ -122,10 +128,15 @@ h3
 {
       position: relative;
       padding: 24px 24px;
-      transition: bottom 2s;
+      transition: bottom 5s;
 }
 
 .contact a:hover
 {
       bottom: 15px;
 }
+
+.copyright 
+{
+      width: 20%;
+}    
