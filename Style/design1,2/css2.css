@@ -1,0 +1,72 @@
+/* RESET CSS */
+*
+{
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+}
+
+html
+{
+      font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+/* COMMON */
+a
+{
+      text-decoration:none;
+      color:#000;
+}
+
+.head-pd
+{
+      padding: 24px 24px;
+}
+
+/* HEADER */
+.header
+{
+      width: 100%;
+      height: fit-content;
+      display:flex;
+      justify-content:space-around;
+}
+
+.header a,
+.header p
+{
+      line-height: 20px;
+} 
+
+/* BODY */
+body
+{
+      background-image: linear-gradient(to bottom,  #4f2bde, #a73ae0);
+      background-repeat: no-repeat;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      height: 100vh;
+      justify-content: space-around;
+}
+
+.body
+{
+      
+}
+
+.heading
+{
+      width: 100%;
+      text-align: center;
+}
+
+.overview
+{
+      text-align: center;
+}
+
+
+
+
+/* FOOTER */
