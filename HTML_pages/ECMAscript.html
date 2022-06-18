@@ -11,13 +11,13 @@
 <body>
       <div class="header">
             
-            <div class="menu-open">
-                  <div class="bar1"></div>
-                  <div class="bar2"></div>
-                  <div class="bar3"></div>
+            <div class="menu-open" onclick="showandhideNav()">
+                  <div class="bar1 bgr"></div>
+                  <div class="bar2 bgr"></div>
+                  <div class="bar3 bgr"></div>
             </div>
 
-            <div class="nav">
+            <div class="nav" id="nav">
                   <a href="#">Home Page</a>
                   <a href="#">Design 1</a>
                   <a href="#">Design 2</a>
@@ -25,10 +25,45 @@
             </div>
       </div>
 
+      <div class="body">
+            <div class="title">
+                  <p>Enter a number between 1 and 100</p>
+            </div>
+            <div class="main-box">
+                  <div class="guessNumInput">
+                        <label for="guessnum">Number: </label>
+                        <input type="number">
+                  </div>
+                  <div class="function">
+                        <button class="button1">
+                              Guess
+                        </button>
+                        <button class="button2">
+                              Restart
+                        </button>
+                  </div>
+            </div>
+
+            <div class="message">
+
+            </div>
+      </div>
+
+
+
+
       <script>
-            function openMenu(x) 
+            function showandhideNav() 
             {
-                x.classList.toggle("change");
+                  var x = document.getElementById("nav");
+                  var y = document.getElementById("menu-open");
+                  if (x.style.display === "none") {
+                        x.style.display = "flex";
+                        
+                  } else {
+                        x.style.display = "none";
+                  
+                  }
             }
       </script>
 </body>
