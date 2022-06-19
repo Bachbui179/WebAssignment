@@ -5,8 +5,9 @@
       <meta http-equiv="X-UA-Compatible" content="IE=edge">
       <meta name="viewport" content="width=device-width, initial-scale=1.0">
       <title>ECMA Script</title>
-      <link rel="icon" type="image/x-icon" href="/Images/all-pages/icon.png">
-      <link rel="stylesheet" href="/Style/ecma/ecma.css">
+      <link rel="icon" type="image/x-icon" href="../Images/all-pages/icon.png">
+      <link rel="stylesheet" href="../Style/ecma/ecma.css">
+      
 </head>
 <body>
       <div class="header">
@@ -32,25 +33,24 @@
             <div class="main-box">
                   <div class="guessNumInput">
                         <label for="guessnum">Number: </label>
-                        <input type="number">
+                        <input id="inputNum" type="number" placeholder="Enter a number">
                   </div>
                   <div class="function">
-                        <button class="button1">
+                        <button class="button1" id="button1" onclick="getInputNum()">
                               Guess
                         </button>
-                        <button class="button2">
+                        <button class="button2" id="button2" onclick="restart()">
                               Restart
                         </button>
                   </div>
             </div>
 
-            <div class="message">
-
+            <div class="message-box" id="message-box">
+                  <p id="output1">Message here</p>
+                  <p id="output2">Let's guess a number</p>
+                  <p id="output3">Number you guessed: </p>
             </div>
       </div>
-
-
-
 
       <script>
             function showandhideNav() 
@@ -59,12 +59,12 @@
                   var y = document.getElementById("menu-open");
                   if (x.style.display === "none") {
                         x.style.display = "flex";
-                        
-                  } else {
+                  } 
+                  else {
                         x.style.display = "none";
-                  
                   }
             }
       </script>
+      <script src="../Js/ecma.js"></script>
 </body>
 </html>
