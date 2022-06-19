@@ -169,7 +169,7 @@ ul li{
       top: 110px;
 }
 
-.html{
+.js{
       display: flex;
       flex-direction: column; 
       height: fit-content;
@@ -178,12 +178,12 @@ ul li{
       align-items: center;
 }
 
-.html-logo img{
+.js-logo img{
       max-width: 160px;
       padding: 48px 0px;
 }
 
-.html .content{
+.js .content{
       width: 100%;
 }
 
@@ -221,17 +221,17 @@ ul li{
       max-width: 50%;
 }
 
-.html .nav, .css .nav{
+.js .nav, .css .nav{
       font-size: 1.2em;
       margin: 12px;
 }
 
-.html .nav:hover, .css .nav:hover{
+.js .nav:hover, .css .nav:hover{
       background: yellow;
       color: #000;
 }
 
-.html .nav a, .css .nav a{
+.js .nav a, .css .nav a{
       text-decoration: none;
       color: #000;
 }
@@ -252,7 +252,7 @@ ul li{
       padding: 48px 0px;
 }
 
-.css #example{
+#example{
       max-height: 275px;
       min-width: 320px;
 }
