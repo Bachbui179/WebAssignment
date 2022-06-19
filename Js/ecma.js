@@ -73,9 +73,9 @@ function getInputNum()
 function checkValidInput()
 {
       var valid = document.getElementById("inputNum");
-      if ((valid.value < 1 && valid.value > 100) || valid.value.length == 0){
+      if ((valid.value < 1 && valid.value > 100) || valid.value.length == ''){
             alert("Number can't be empty and in a range between 1 and 100");
-            
+            counter -=1;
             return false;
       }
       else
