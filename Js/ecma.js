@@ -1,32 +1,50 @@
-const ranNumber = Math.floor(Math.random() * 101);
+
 const box = document.getElementById("message-box");
 var content1 = document.getElementById("output1");
 var content2 = document.getElementById("output2");
 var content3 = document.getElementById("output3");
+var content4 = document.getElementById("output4");
 
 
 var output1 = content1.innerHTML;
 var output2 = content2.innerHTML;
 var output3 = content3.innerHTML;
+var output4 = content4.innerHTML;
 
-const data = {}
+const data = {};
 
 let counter = 0;
+var playCounter = 0;
+var playerCounter = [];
+
 var guessNumber = []
+var ranNumber = Math.floor(Math.random() * 101);
+
 console.log(ranNumber)
+
 function getInputNum()
-{
+{     
       checkValidInput()
       var guess = document.getElementById("inputNum").value;
       counter += 1;
-      
       if (guess == ranNumber)
       {
-            endGame();
+            document.getElementById("button1").style.display = "none";
+            content1.innerHTML = 'Congrats, you made it!!';
+            document.getElementById("message-box").style.backgroundColor = "green";
+            content2.innerHTML = 'You guessed ' + counter + ' times. Press restart to play more';
+            content3.innerHTML =  guessNumber.toString();
+            guessNumber = [];
+            guessNumber.push(guess);
+            playCounter += 1;
+            playerCounter.push(playCounter);
+            saveData();
+            counter = 0;
+            highScore();
             clrScr();
       }
 
-      else if (guess >= (ranNumber-10) && guess <= (ranNumber + 10))
+      else if (guess >= (ranNumber - 10) && guess <= (ranNumber + 10))
             
       {
             document.getElementById("message-box").style.backgroundColor = "red";
@@ -84,21 +102,38 @@ function checkValidInput()
       }
 
 }
-      
-function endGame()
+
+function saveData()
 {
-      content1.innerHTML = 'Congrats, you made it!!';
-      document.getElementById("message-box").style.backgroundColor = "green";
-      content2.innerHTML = 'You guessed ' + counter + ' times. Press restart to play more';
-      content3.innerHTML =  guessNumber.toString();
-      guessNumber = [];
-      counter = 0;
+      data["Player "+ playCounter] = counter;
+      console.log(data);
+}
+
+function highScore()
+{
+      function getObjKey(obj, value) 
+      {
+            return Object.keys(obj).find(key => obj[key] === value);
+            // The find() method returns the first element in the provided 
+            // array that satisfies the provided testing function. 
+            // If no values satisfy the testing function, undefined is returned.
+      }
+      var scores = Object.values(data);
+      var min = Math.min(...scores);
+      var updateHighScore = getObjKey(data, min)
+      content4.innerHTML = 'High Score: ' + updateHighScore;
+      
 }
 
 function restart()
 {
+      document.getElementById("button1").style.display = "inline-block";
+      content1.innerHTML = 'Message here';
       document.getElementById("message-box").style.backgroundColor = "white";
-      guessNumber = []
+      content2.innerHTML = "Let's guess a number";
+      content3.innerHTML = "Number you guessed: ";
+      ranNumber = Math.floor(Math.random() * 101);
+      console.log(ranNumber);
 }
 
 function clrScr()
