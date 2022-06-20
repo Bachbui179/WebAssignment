@@ -1,4 +1,3 @@
-
 const box = document.getElementById("message-box");
 var content1 = document.getElementById("output1");
 var content2 = document.getElementById("output2");
@@ -40,7 +39,7 @@ function getInputNum()
             playCounter += 1;
             playerCounter.push(playCounter);
             saveData();
-            counter = 0;
+            
             highScore();
             clrScr();
       }
@@ -99,11 +98,6 @@ function checkValidInput()
       }
 }
 
-// function updateGuessNum()
-// {
-      
-// }
-
 function saveData()
 {
       data["Player "+ playCounter] = counter;
@@ -123,11 +117,11 @@ function highScore()
       var min = Math.min(...scores);
       var updateHighScore = getObjKey(data, min)
       content4.innerHTML = 'High Score: ' + updateHighScore;
-      
 }
 
 function restart()
 {
+      counter = 0;
       guessNumber = [];
       document.getElementById("button1").style.display = "inline-block";
       content1.innerHTML = 'Message here';
