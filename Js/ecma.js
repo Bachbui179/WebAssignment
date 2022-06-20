@@ -17,6 +17,8 @@ let counter = 0;
 var playCounter = 0;
 var playerCounter = [];
 
+
+
 var guessNumber = []
 var ranNumber = Math.floor(Math.random() * 101);
 
@@ -34,7 +36,6 @@ function getInputNum()
             document.getElementById("message-box").style.backgroundColor = "green";
             content2.innerHTML = 'You guessed ' + counter + ' times. Press restart to play more';
             content3.innerHTML =  guessNumber.toString();
-            guessNumber = [];
             guessNumber.push(guess);
             playCounter += 1;
             playerCounter.push(playCounter);
@@ -91,17 +92,17 @@ function getInputNum()
 function checkValidInput()
 {
       var valid = document.getElementById("inputNum");
-      if ((valid.value < 1 && valid.value > 100) || valid.value.length == ''){
+      if (valid.value < 1 || valid.value > 100 || valid.value.length == '')
+      {
             alert("Number can't be empty and in a range between 1 and 100");
             counter -=1;
-            return false;
       }
-      else
-      {
-            return true;
-      }
-
 }
+
+// function updateGuessNum()
+// {
+      
+// }
 
 function saveData()
 {
@@ -127,6 +128,7 @@ function highScore()
 
 function restart()
 {
+      guessNumber = [];
       document.getElementById("button1").style.display = "inline-block";
       content1.innerHTML = 'Message here';
       document.getElementById("message-box").style.backgroundColor = "white";
