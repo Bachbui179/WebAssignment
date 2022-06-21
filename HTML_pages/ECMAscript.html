@@ -7,22 +7,23 @@
       <title>ECMA Script</title>
       <link rel="icon" type="image/x-icon" href="../Images/all-pages/icon.png">
       <link rel="stylesheet" href="../Style/ecma/ecma.css">
+      <link rel="stylesheet" href="../Style/ecma/ecma_media.css">
       
 </head>
 <body>
       <div class="header">
             
             <div class="menu-open" onclick="showandhideNav()">
-                  <div class="bar1 bgr"></div>
-                  <div class="bar2 bgr"></div>
-                  <div class="bar3 bgr"></div>
+                  <div class="bgr" id="bar1" onclick="showandhideNav()"></div>
+                  <div class="bgr" id="bar2" onclick="showandhideNav()"></div>
+                  <div class="bgr" id="bar3" onclick="showandhideNav()"></div>
             </div>
 
             <div class="nav" id="nav">
-                  <a href="#">Home</a>
-                  <a href="#">Design 1</a>
-                  <a href="#">Design 2</a>
-                  <a href="#">Skills</a>
+                  <a href="../HTML_pages/home_page.html">Home</a>
+                  <a href="../HTML_pages/css1.html">Design 1</a>
+                  <a href="../HTML_pages/css2.html">Design 2</a>
+                  <a href="../HTML_pages/skill.html">Skills</a>
             </div>
       </div>
 
@@ -61,12 +62,21 @@
             function showandhideNav() 
             {
                   var x = document.getElementById("nav");
-                  var y = document.getElementById("menu-open");
+                  
                   if (x.style.display === "none") {
                         x.style.display = "flex";
+                        document.getElementsByClassName("bar1").style.backgroundColor = "white";
+                        document.getElementsByClassName("bar2").style.backgroundColor = "white";
+                        document.getElementsByClassName("bar3").style.backgroundColor = "white";
+                        
                   } 
                   else {
                         x.style.display = "none";
+                        document.getElementsByClassName("bar1").style.backgroundColor = "black";
+                        document.getElementsByClassName("bar2").style.backgroundColor = "black";
+                        document.getElementsByClassName("bar3").style.backgroundColor = "black";
+
+
                   }
             }
       </script>

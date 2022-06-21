@@ -25,10 +25,11 @@ a
 .menu-open
 {
       display: inline-block;
+      padding: 12px 24px;
       cursor: pointer;
 }
 
-.bar1, .bar2, .bar3
+.bgr
 {
       border-radius: 10px;
       width: 35px;
@@ -39,10 +40,10 @@ a
       padding: 0px 5px;
 }
 
-.menu-open:hover .bgr
+/* .menu-open:hover .bgr
 {
       background-color: #fff;
-}
+} */
 
 .nav
 {
