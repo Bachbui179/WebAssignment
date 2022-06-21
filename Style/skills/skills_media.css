@@ -1,0 +1,68 @@
+@media (max-width:575px) and (min-width: 320px)
+{
+      /* COMMON */
+
+      html 
+      {
+
+      }
+
+      /* HEADER */
+      .nav:hover .nav-container {
+            display: block;
+      }
+
+      .nav-container{
+            background-color:rgb(84 61 39);
+      }
+
+      .header .nav:hover 
+      {
+            background-color: rgb(84 61 39);
+      }
+
+      .nav-container ul li
+      {
+            background-color: rgb(84 61 39);
+      }
+      .body .navig 
+      {
+            top: 105px;
+      }
+
+      .welcome-page .title
+      {
+            font-size: 0.9em;
+            text-align: center;
+      }
+
+      .welcome-page .context
+      {
+            font-size: 1.2em;
+            padding: 192px 34px;
+            top: 0;
+      }
+
+      /* BODY */
+      body
+      {
+            width:100%;
+      }
+
+      .body .navig a
+      {
+            padding: 16px 52px;
+      }
+
+      /* FOOTER */
+      .link
+      {
+            display: flex;
+            flex-direction: column;
+      }
+
+      .link a:active
+      {
+            color:#000;
+      }
+}

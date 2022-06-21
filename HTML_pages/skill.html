@@ -7,6 +7,7 @@
       <title>Skills</title>
       <link rel="icon" type="image/x-icon" href="../Images/all-pages/icon.png">
       <link rel="stylesheet" href="../Style/skills/skills.css">
+      <link rel="stylesheet" href="../Style/skills/skills_media.css">
 </head>
 <body>
       <div class="header" id="header">
@@ -14,12 +15,12 @@
                   <p>Bui Hoang Bach</p>
             </div>
             <div class="menu-bar">
-                  <div class="nav">
+                  <div class="nav" id="nav" onclick="showandhide()">
                         <p>More</p>
                         <div class="icon">
-                              <i class="arrow down"></i>
+                              <i class="arrow down" id="arrow"></i>
                         </div>
-                        <div class="nav-container">
+                        <div class="nav-container" id="nav-container">
                               <ul>
                                     <li>
                                           <a href="../HTML_pages/css1.html">Design 1</a> 
@@ -175,5 +176,20 @@
             </div>
             
       </div>
+      <script>
+            function showandhide()
+            {
+                  var x = document.getElementById("nav");
+                  var y = document.getElementById("nav-container");
+                  if (y.style.display === "none") {
+                        y.style.display = "block";
+                        document.getElementById("arrow").style.transform = "translateX(110px) translateY(-31px) rotate(-135deg)";
+                  } 
+                  else {
+                        y.style.display = "none";
+                        document.getElementById("arrow").style.transform = "translateX(110px) translateY(-36px) rotate(45deg)";
+                  }
+            }
+      </script>
 </body>
 </html>

@@ -34,6 +34,7 @@
       /* CONTENT */
       .content{
             background-image: none;
+            height: auto;
       }
 
       .aboutme h1{
@@ -62,11 +63,16 @@
             font-size:0.7rem
       }
 
+      .one:active, .four:active {
+            background-color: rgba(255, 255, 255, 0.3);
+            border: none;
+            padding-bottom: 56px;
+      }
       
 
       /* FOOTER */
       .footer{
-            transform: translateY(650px);
+            transform: translateY(0px);
       }
 
       .link{
@@ -79,6 +85,7 @@
 
       .footer .contact h3{
             transform: translateX(0px);
+            padding: 12px;
       }
 
       .mobile-link li{
@@ -88,6 +95,8 @@
       .mobile-link a{
             color: white;
       }
+
+      
 }
 
 /* @media (max-width:575px) and  */

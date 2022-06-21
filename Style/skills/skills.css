@@ -63,13 +63,13 @@ ul li{
       color: #000;
 }
 
-.header .nav:hover .arrow{
+/* .header .nav:hover .arrow{
       transform: translateX(110px) translateY(-31px) rotate(-135deg);
       border: solid #000;
       border-width: 0 3px 3px 0;
       display: inline-block;
       padding: 3px;
-}
+} */
 
 .nav-container li:hover{
       background-color:rgb(114 103 83);
@@ -105,9 +105,6 @@ ul li{
       text-decoration: none;
 }
 
-.nav:hover .nav-container {
-      display: block;
-}
 
 /* BODY */
 
@@ -147,7 +144,7 @@ ul li{
       flex-wrap: wrap;
       justify-content: center;
       align-items: center;
-      height: 94vh;
+      min-height: 100vh;
 }
 
 .welcome-page .title{
